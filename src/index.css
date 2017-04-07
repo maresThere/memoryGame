@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border: 4px solid red;
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+.card {
+  background-color: blue;
+  border: 2px solid black;
+  width: 230px;
+  height: 230px;
+  margin: 0 auto;
+}
+
+.matched {
+  opacity: 0.5;
+}
+
+.revealed.camera, .matched.camera {
+  background: url("images/camera.jpg") no-repeat center;
+}
+
+.revealed.camera2, .matched.camera2 {
+  background: url("images/camera2.jpeg") no-repeat center;
+}
+
+.revealed.cassette, .matched.cassette {
+  background: url("images/cassette.jpeg") no-repeat center;
+}
+
+.revealed.guitar, .matched.guitar {
+  background: url("images/guitar.jpeg") no-repeat center;
+}
+
+.revealed.television, .matched.television {
+  background: url("images/television.jpeg") no-repeat center;
+}
+
+.revealed.diskette, .matched.diskette {
+  background: url("images/diskette.jpeg") no-repeat center;
+}
+
+.revealed.gameBoy, .matched.gameBoy {
+  background: url("images/gameBoy.jpeg") no-repeat center;
+}
+
+.revealed.microphone, .matched.microphone {
+  background: url("images/microphone.jpeg") no-repeat center;
+}
+
+body {
+  @include font-smoothing(on);
+
+  margin: 10px;
+  font: $base-text-size / 1 $base-font-family;
+  background-color: $orange;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body:not(.modal) .overlay {
+  display: none;
+}
+
+body.modal section {
+  filter: blur(5px);
+}
+
+.dialog {
+  height: 200px;
+  width: 200px;
+  background-color: green;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #333;
+}
