@@ -45,6 +45,10 @@ class App extends Component {
     }, 2000)
   }
 
+  reset = () => {
+    this.setState({ gameOver: false })
+  }
+
   render() {
     if (this.state.gameOver) {
       return <Modal/>

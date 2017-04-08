@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 
 class Card extends Component {
   _click =() => {
-   console.log('it clicked')
   this.props.flipCard(this.props.index)
-  // this.props.checkForMatch(this.props.index)
  }
 
  render() {
