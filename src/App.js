@@ -51,9 +51,11 @@ class App extends Component {
 
   render() {
     if (this.state.gameOver) {
-      return <Modal/>
+      return <Modal reset={this.reset} />
     } else {
       return (
+        <div>
+        <h1>Let's Play Memory</h1>
         <div className='cardContainer'>
           <Card index={0} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[0]} revealed={this.state.picks.includes(0)} matched={this.state.matched.includes(0)} />
           <Card index={1} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[1]} revealed={this.state.picks.includes(1)} matched={this.state.matched.includes(1)} />
@@ -72,6 +74,7 @@ class App extends Component {
           <Card index={14} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[14]} revealed={this.state.picks.includes(14)} matched={this.state.matched.includes(14)} />
           <Card index={15} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[15]} revealed={this.state.picks.includes(15)} matched={this.state.matched.includes(15)} />
         </div>
+      </div>  
       )
     }
   }

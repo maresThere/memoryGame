@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Spirax');
+
+h1 {
+  font-family: 'Spirax', cursive;
+  text-align: center;
+  font-size: 80px;
+  color: #a14016;
+
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,17 +16,19 @@ body {
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
-  border: 4px solid red;
+  border: 12px ridge #a14016;
   width: 1000px;
   height: 1000px;
   margin: 0 auto;
+  margin-top: 30px;
 }
 .card {
-  background-color: blue;
-  border: 2px solid black;
+  background-color: #ea4335;
+  border: 5px solid #ea9900;
   width: 230px;
   height: 230px;
   margin: 0 auto;
+  padding: 5px;
 }
 
 .matched {
