@@ -34,7 +34,7 @@ class App extends Component {
               matched: [],
               gameOver: true
             })
-          }, 3000)
+          }, 2000)
         }
       })
     }
@@ -42,7 +42,7 @@ class App extends Component {
       this.setState({
         picks: []
       })
-    }, 2000)
+    }, 1500)
   }
 
   reset = () => {
@@ -74,7 +74,7 @@ class App extends Component {
           <Card index={14} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[14]} revealed={this.state.picks.includes(14)} matched={this.state.matched.includes(14)} />
           <Card index={15} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[15]} revealed={this.state.picks.includes(15)} matched={this.state.matched.includes(15)} />
         </div>
-      </div>  
+      </div>
       )
     }
   }

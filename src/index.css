@@ -3,7 +3,7 @@
 h1 {
   font-family: 'Spirax', cursive;
   text-align: center;
-  font-size: 80px;
+  font-size: 40px;
   color: #a14016;
 
 }
@@ -16,19 +16,19 @@ body {
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
-  border: 12px ridge #a14016;
-  width: 1000px;
-  height: 1000px;
+  border: 8px ridge #a14016;
+  width: 616px;
+  height: 616px;
   margin: 0 auto;
   margin-top: 30px;
 }
 .card {
   background-color: #ea4335;
-  border: 5px solid #ea9900;
-  width: 230px;
-  height: 230px;
+  border: 2px solid #ea9900;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
-  padding: 5px;
+  /*padding: 5px;*/
 }
 
 .matched {
@@ -81,7 +81,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: hsla(0, 0%, 0%, 0.2);
+  background-color: #ea4335;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +94,7 @@ body {
 .dialog {
   height: 200px;
   width: 200px;
-  background-color: red;
+  background-color: #ea9900;
   padding: 1em;
   display: flex;
   flex-direction: column;

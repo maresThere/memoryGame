@@ -11,7 +11,7 @@ class Modal extends Component {
    return (
    <div className="overlay">
      <div className="dialog">
-       <h3>GAME OVER winner.</h3>
+       <h3>You matched them all!</h3>
        <button onClick={this._reset}
           type="button">Play Again</button>
      </div>
