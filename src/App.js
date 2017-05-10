@@ -57,15 +57,16 @@ class App extends Component {
         <div>
         <h1>Let's Play Memory</h1>
         <div className='cardContainer'>
-          <Card index={0} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[0]} revealed={this.state.picks.includes(0)} matched={this.state.matched.includes(0)} />
           <Card index={1} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[1]} revealed={this.state.picks.includes(1)} matched={this.state.matched.includes(1)} />
           <Card index={2} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[2]} revealed={this.state.picks.includes(2)} matched={this.state.matched.includes(2)} />
           <Card index={3} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[3]} revealed={this.state.picks.includes(3)} matched={this.state.matched.includes(3)} />
           <Card index={4} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[4]} revealed={this.state.picks.includes(4)} matched={this.state.matched.includes(4)} />
-          <Card index={5} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[5]} revealed={this.state.picks.includes(5)} matched={this.state.matched.includes(5)} />
+          <Card index={0} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[0]} revealed={this.state.picks.includes(0)} matched={this.state.matched.includes(0)} />
+          <Card index={8} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[8]} revealed={this.state.picks.includes(8)} matched={this.state.matched.includes(8)} />
+        <Card index={5} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[5]} revealed={this.state.picks.includes(5)} matched={this.state.matched.includes(5)} />
           <Card index={6} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[6]} revealed={this.state.picks.includes(6)} matched={this.state.matched.includes(6)} />
           <Card index={7} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[7]} revealed={this.state.picks.includes(7)} matched={this.state.matched.includes(7)} />
-          <Card index={8} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[8]} revealed={this.state.picks.includes(8)} matched={this.state.matched.includes(8)} />
+
           <Card index={9} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[9]} revealed={this.state.picks.includes(9)} matched={this.state.matched.includes(9)} />
           <Card index={10} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[10]} revealed={this.state.picks.includes(10)} matched={this.state.matched.includes(10)} />
           <Card index={11} picks={this.state.picks} flipCard={this.flipCard} value={this.state.moves[11]} revealed={this.state.picks.includes(11)} matched={this.state.matched.includes(11)} />
